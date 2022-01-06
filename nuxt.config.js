@@ -45,9 +45,9 @@ export default {
       {
         // 대응할 언어들 셋팅
         locales: [
-          { code: 'ko', name: 'Korean', iso: 'ko_KR', file: 'ko/index.js' },
-          { code: 'en', name: 'English', iso: 'en_US', file: 'en/index.js' },
-          { code: 'ja', name: 'Japanese', iso: 'ja_JP', file: 'ja/index.js' },
+          { code: 'ko', name: 'Korean', iso: 'ko_KR', file: 'ko.json' },
+          { code: 'en', name: 'English', iso: 'en_US', file: 'en.json' },
+          { code: 'ja', name: 'Japanese', iso: 'ja_JP', file: 'ja.json' },
         ],
         defaultLocale: 'ko',
         langDir: 'locales/',
