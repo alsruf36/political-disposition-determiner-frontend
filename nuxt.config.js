@@ -17,7 +17,9 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/index.js', ssr: false },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -37,6 +39,27 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+
+    [
+      '@nuxtjs/i18n',
+      {
+        // 대응할 언어들 셋팅
+        locales: [
+          { code: 'ko', name: 'Korean', iso: 'ko_KR', file: 'ko/index.js' },
+          { code: 'en', name: 'English', iso: 'en_US', file: 'en/index.js' },
+          { code: 'ja', name: 'Japanese', iso: 'ja_JP', file: 'ja/index.js' },
+        ],
+        defaultLocale: 'ko',
+        langDir: 'locales/',
+        strategy: 'prefix_except_default',
+        vueI18n: {
+          fallbackLocale: 'ko',
+        },
+        lazy: true,
+        vueI18nLoader: true,
+        vuex: false,
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
