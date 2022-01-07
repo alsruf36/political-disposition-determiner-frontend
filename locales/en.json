@@ -1,5 +1,19 @@
 {
   "statusCheckMsg": {
-    "checking": "Checking the status of the server!"
+    "checking": "Checking the status of the server!",
+    "colabChecking": "Connecting to cloab! \n〰️",
+    "failCheck": "Unable to connect to server 😓"
+  },
+  "Intro": {
+    "analyzeButton": "to analyze",
+    "cardExplanation": "The Political Disposition Discriminator has two sections.\nThe left section randomly presents news for you to comment on.\nThe right section allows you to write comments about the news.",
+    "conservative": "repair",
+    "hello": "Hello!",
+    "progressive": "progress",
+    "self": "Let's take a look at the political bias discriminator.",
+    "getStarted": "Now, shall we analyze your political orientation? Please click me!"
+  },
+  "newsCard": {
+    "title": "news"
   }
 }

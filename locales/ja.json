@@ -1,5 +1,19 @@
 {
   "statusCheckMsg": {
-    "checking": "サーバーの状態を確認中です！"
+    "checking": "サーバーの状態を確認中です！",
+    "colabChecking": "cloabに接続しています！ \n〰️",
+    "failCheck": "サーバーに接続できません😓"
+  },
+  "Intro": {
+    "analyzeButton": "分析する",
+    "cardExplanation": "政治指向判別器には2つのセクションがあります。\n左のセクションはあなたが意見を書くニュースをランダムに提示します。\n右のセクションでは、ニュースに関するコメントを書くことができます。",
+    "conservative": "報酬",
+    "hello": "こんにちは！",
+    "progressive": "進歩",
+    "self": "政治性向判別機について調べます。",
+    "getStarted": "今、あなたの政治的傾向を分析しましょうか？ 私をクリックしてください！"
+  },
+  "newsCard": {
+    "title": "ニュース"
   }
 }

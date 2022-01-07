@@ -1,5 +1,19 @@
 {
   "statusCheckMsg": {
-    "checking": "서버의 상태를 확인 중입니다!"
+    "checking": "서버의 상태를 확인 중입니다!",
+    "failCheck": "서버에 연결할 수 없습니다 😓",
+    "colabChecking": "cloab에 연결하는 중 입니다! 〰️"
+  },
+  "Intro": {
+    "hello": "안녕하세요!",
+    "self": "정치 성향 판별기에 대하여 알아볼게요.",
+    "cardExplanation": "정치 성향 판별기는 두 섹션을 가지고 있습니다.\n왼쪽 섹션은 여러분이 의견을 쓸 뉴스를 랜덤으로 제시합니다.\n오른쪽 섹션은 뉴스에 대한 의견을 쓸 수 있습니다.",
+    "analyzeButton": "분석하기",
+    "conservative": "보수",
+    "progressive": "진보",
+    "getStarted": "자, 이제 당신의 정치 성향을 분석해볼까요? 저를 클릭해주세요!"
+  },
+  "newsCard": {
+    "title": "뉴스"
   }
 }
