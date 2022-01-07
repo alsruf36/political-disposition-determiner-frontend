@@ -15,5 +15,8 @@
   },
   "newsCard": {
     "title": "news"
+  },
+  "inputCard": {
+    "title": "to enter"
   }
 }

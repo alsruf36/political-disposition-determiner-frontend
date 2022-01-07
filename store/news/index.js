@@ -7,6 +7,8 @@ export const state = () => ({
   news_subtitle: '',
   news_summary: '',
   news_content: '',
+  status: 'none',
+  status_msg: '',
 })
 
 export default {

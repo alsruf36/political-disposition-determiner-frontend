@@ -5,7 +5,19 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
+
 export default {
   name: 'pingHeartbeat',
+  computed: {
+    ...mapGetters({
+        api_server_status: 'status/return_api_server_status',
+    })
+  },
+  methods: {
+    ...mapActions({
+      get_api_server_status: 'status/get_api_server_status',
+    })
+  }
 };
 </script>

@@ -15,5 +15,8 @@
   },
   "newsCard": {
     "title": "뉴스"
+  },
+  "inputCard": {
+    "title": "입력하기"
   }
 }

@@ -15,5 +15,8 @@
   },
   "newsCard": {
     "title": "ニュース"
+  },
+  "inputCard": {
+    "title": "入力する"
   }
 }

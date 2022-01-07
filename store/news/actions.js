@@ -1,13 +1,16 @@
 import axios from 'axios'
 
-const axiosInstance = axios.create({
+const axiosInstanceAPI = axios.create({
   baseURL: 'http://mingyeol.com:1303/_/api',
   withCredentials: false,
 })
+
+
 export default {
   async get_content({ commit }) {
+    commit('set_status_start')
     return await new Promise((resolve, reject) => {
-      axiosInstance
+      axiosInstanceAPI
         .get('/article')
         .then((resp) => {
           window.console.log('[debug] article resp', resp)

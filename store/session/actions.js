@@ -8,9 +8,6 @@ const plainAxiosInstance = axios.create({
   },
 })
 export default {
-  /*
-  유저의 현재 IP 주소를 구한다.
-  */
   async get_ip_addr({ commit }) {
     return await new Promise((resolve, reject) => {
       plainAxiosInstance
