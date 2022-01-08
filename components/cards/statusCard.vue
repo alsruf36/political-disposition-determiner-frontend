@@ -1,7 +1,13 @@
 <template>
-    <div class="items-center p-5 font-sans bg-white divide-y rounded-lg shadow-xl" @click='get_api_server_status'>
-        <a>{{ $t('statusCheckMsg.checking') }}</a>
-        <div>{{ api_server_status }}</div>
+    <div class="grid p-5 font-sans text-3xl font-bold bg-white rounded-lg shadow-xl place-content-center">
+        <div v-if="api_server_status === 'none'">
+          <a>{{ $t('statusCheckMsg.checking') }} 🔄</a>
+        </div>
+        <div v-else-if="api_server_status.live === 'true'">{{ $t('statusCheckMsg.status') }} ✅</div>
+        <div v-else-if="api_server_status === 'false'">{{ $t('statusCheckMsg.status') }} ❌</div>
+        <div v-else-if="api_server_status === 'pending'">
+          <a>{{ $t('statusCheckMsg.status') }} 🔄</a>
+        </div>
     </div>
 </template>
 
@@ -19,6 +25,9 @@ export default {
     ...mapActions({
       get_api_server_status: 'status/get_api_server_status',
     })
+  },
+  mounted() {
+      setInterval(this.get_api_server_status, 3000);
   }
 };
 </script>

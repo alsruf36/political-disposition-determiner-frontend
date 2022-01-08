@@ -5,7 +5,8 @@ const axiosInstance = axios.create({
   withCredentials: false,
 })
 export default {
-  async get_api_server_status({ commit }) {
+  async get_api_server_status({ commit, state }) {
+    commit('set_api_server_status_pending')
     return await new Promise((resolve, reject) => {
       axiosInstance
         .get('/heartbeat')
@@ -16,6 +17,7 @@ export default {
           resolve(resp)
         })
         .catch((err) => {
+          commit('set_api_server_status_false')
           reject(err)
         })
     })

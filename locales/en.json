@@ -2,7 +2,8 @@
   "statusCheckMsg": {
     "checking": "Checking the status of the server!",
     "colabChecking": "Connecting to cloab!",
-    "failCheck": "Unable to connect to server 😓"
+    "failCheck": "Unable to connect to server 😓",
+    "status": "server status"
   },
   "Intro": {
     "analyzeButton": "to analyze",

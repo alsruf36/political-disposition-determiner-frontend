@@ -3,8 +3,8 @@ import getters from './getters'
 import mutations from './mutations'
 
 export const state = () => ({
-  api_server_status: 'pending',
-  colab_server_status: 'pending',
+  api_server_status: 'none',
+  colab_server_status: 'none',
 })
 
 export default {
