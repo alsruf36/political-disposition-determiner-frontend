@@ -1,7 +1,7 @@
 import { getField } from 'vuex-map-fields';
 
 export default {
-    return_content(state) {
+    return_result(state) {
       return state
     },
 

@@ -5,15 +5,15 @@ export default {
       state.status = 'start'
     },
 
-    set_result (state, article) {
+    set_result (state, res) {
       console.log('[debug] state ', state)
 
-      if (article.status === 'fail') {
+      if (res.status === 'fail') {
         state.status = 'fail'
-        state.status_msg = article.reason
+        state.status_msg = res.reason
       }
-      else if (article.status === 'success'){
-        state.analyzed = article.result
+      else if (res.status === 'success'){
+        state.analyzed = res.result
         state.status = 'success'
         state.status_msg = 'success'
       }

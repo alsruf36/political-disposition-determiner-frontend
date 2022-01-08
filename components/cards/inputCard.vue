@@ -1,17 +1,18 @@
 <template>
-    <div class="items-center w-3/4 p-5 overflow-y-auto font-sans bg-white rounded-lg shadow-xl h-3/4" @click="get_content">
+    <div class="items-center w-full h-full p-5 overflow-y-auto font-sans bg-white rounded-lg shadow-xl">
         <div class="h-full">
-            <div>
+            <div class="mb-2.5">
                 <h1 class="text-4xl font-extrabold"> <span class="underline decoration-indigo-500">{{ $t('inputCard.title') }}</span></h1>
             </div>
-            <div class="content-center justify-center my-4 h-5/6">
-                <textarea class="w-full h-full px-3 py-2 mb-1.5 text-gray-700 border border-gray-500 rounded shadow appearance-none resize-none focus:outline-none focus:shadow-outline" v-model="sentence"></textarea>
-                <button class="w-full relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:ring-purple-200 dark:focus:ring-purple-800">
-                    <span class="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        분석하기
-                    </span>
-                </button>
+            <div class="w-full relative inline-flex items-center justify-center p-0.5 mb-2.5 mr-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 focus:ring-4 focus:ring-purple-200 dark:focus:ring-purple-800 h-2/3">
+                <textarea class="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md shadow appearance-none resize-none focus:outline-none focus:shadow-outline h-full text-xl font-extralight" v-model="sentence"></textarea>
             </div>
+            <button v-shortkey.once="['f2']" @shortkey="get_result" @click="get_result" class="w-full relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-bold text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:ring-purple-200 dark:focus:ring-purple-800">
+                <span class="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    분석하기
+                    <kbd class="kbd kbd-sm">F2</kbd>
+                </span>
+            </button>
         </div>
     </div>
 </template>
@@ -24,13 +25,13 @@ export default {
   name: 'inputCard',
   computed: {
     ...mapGetters({
-        content: 'news/return_content',
+        content: 'analyze/return_result',
     }),
     ...mapFields('analyze', ['sentence']),
   },
   methods: {
     ...mapActions({
-      get_content: 'news/get_content',
+      get_result: 'analyze/get_result',
     })
   }
 };

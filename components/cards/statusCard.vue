@@ -1,6 +1,7 @@
 <template>
-    <div class="items-center p-5 font-sans bg-white divide-y rounded-lg shadow-xl">
+    <div class="items-center p-5 font-sans bg-white divide-y rounded-lg shadow-xl" @click='get_api_server_status'>
         <a>{{ $t('statusCheckMsg.checking') }}</a>
+        <div>{{ api_server_status }}</div>
     </div>
 </template>
 
@@ -8,7 +9,7 @@
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
-  name: 'pingHeartbeat',
+  name: 'statusCard',
   computed: {
     ...mapGetters({
         api_server_status: 'status/return_api_server_status',

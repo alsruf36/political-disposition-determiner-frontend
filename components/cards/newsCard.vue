@@ -1,5 +1,5 @@
 <template>
-    <div class="items-center w-3/4 p-5 overflow-y-auto font-sans bg-white rounded-lg shadow-xl h-3/4" @click="get_content">
+    <div class="items-center w-full h-full p-5 overflow-y-auto font-sans bg-white rounded-lg shadow-xl" @click="get_content">
         <div>
             <h1 class="text-4xl font-extrabold"> <span class="underline decoration-indigo-500">{{ $t('newsCard.title') }}</span></h1>
         </div>
@@ -21,7 +21,7 @@
             </div>
 
             <div v-else-if="content.status === 'fail'">
-                <h2 class="text-3xl font-bold">불러오는데 실패햐였습니다.. 😓</h2>
+                <h2 class="text-3xl font-bold">불러오는데 실패하였습니다.. 😓</h2>
                 <p class="text-lg font-extralight">{{ content.status_msg }}</p>
             </div>
             

@@ -1,7 +1,7 @@
 {
   "statusCheckMsg": {
     "checking": "サーバーの状態を確認中です！",
-    "colabChecking": "cloabに接続しています！ \n〰️",
+    "colabChecking": "cloabに接続しています！",
     "failCheck": "サーバーに接続できません😓"
   },
   "Intro": {
