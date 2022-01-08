@@ -7,9 +7,9 @@
   "Intro": {
     "analyzeButton": "to analyze",
     "cardExplanation": "The Political Disposition Discriminator has two sections.\nThe left section randomly presents news for you to comment on.\nThe right section allows you to write comments about the news.",
-    "conservative": "repair",
+    "conservative": "conservative",
     "hello": "Hello!",
-    "progressive": "progress",
+    "progressive": "progressive",
     "self": "Let's take a look at the political bias discriminator.",
     "getStarted": "Now, shall we analyze your political orientation? Please click me!"
   },

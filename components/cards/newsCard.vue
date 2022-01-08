@@ -48,13 +48,11 @@ export default {
   computed: {
     ...mapGetters({
         content: 'news/return_content',
-        api_server_status: 'status/return_api_server_status',
     })
   },
   methods: {
     ...mapActions({
       get_content: 'news/get_content',
-      get_api_server_status: 'status/get_api_server_status',
     })
   }
 };
