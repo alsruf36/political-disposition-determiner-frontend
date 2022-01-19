@@ -5,7 +5,7 @@ const axiosInstance = axios.create({
   withCredentials: false,
 })
 export default {
-  async get_api_server_status({ commit, state }) {
+  async get_api_server_status({ commit }) {
     commit('set_api_server_status_pending')
     return await new Promise((resolve, reject) => {
       axiosInstance
@@ -18,7 +18,7 @@ export default {
         })
         .catch((err) => {
           commit('set_api_server_status_false')
-          reject(err)
+          console.log(err)
         })
     })
   },

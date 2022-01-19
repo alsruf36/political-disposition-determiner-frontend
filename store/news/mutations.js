@@ -3,6 +3,11 @@ export default {
       state.status = 'start'
     },
 
+    set_status_fail (state, msg) {
+      state.status = 'fail'
+      state.status_msg = msg
+    },
+
     set_content (state, article) {
       console.log('[debug] state ', state)
 

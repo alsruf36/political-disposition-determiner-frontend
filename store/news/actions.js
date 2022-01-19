@@ -19,7 +19,8 @@ export default {
           resolve(resp)
         })
         .catch((err) => {
-          reject(err)
+          commit('set_status_fail', err)
+          console.log(err)
         })
     })
   },

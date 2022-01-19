@@ -23,6 +23,12 @@ import { mapFields } from 'vuex-map-fields'
 
 export default {
   name: 'inputCard',
+   data () {
+    return {
+      height: 0,
+      width: 0,
+    }
+  },
   computed: {
     ...mapGetters({
         content: 'analyze/return_result',
