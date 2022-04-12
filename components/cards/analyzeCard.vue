@@ -15,8 +15,10 @@
                 </div>
             </div>
             <div v-else-if="content.status === 'fail'">
-                <h2 class="text-3xl font-bold">분석하는데 실패하였습니다.. 😓</h2>
-                <p class="text-lg font-extralight">{{ content.status_msg }}</p>
+                <div class="shadow-xl p-3.5 mb-3.5 rounded-xl text-gray-700 bg-gray-100">
+                    <h2 class="p-2 text-3xl font-bold">{{ $t('statusCheckMsg.failCheck') }}</h2>
+                    <h3 class="text-xl font-bold text-gray-500">{{ content.status_msg }}</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -26,7 +28,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  name: 'analyzeCard',
+  name: 'AnalyzeCard',
   computed: {
     ...mapGetters({
         content: 'analyze/return_result',

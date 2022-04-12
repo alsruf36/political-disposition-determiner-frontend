@@ -8,16 +8,23 @@
   "Intro": {
     "analyzeButton": "to analyze",
     "cardExplanation": "The Political Disposition Discriminator has two sections.\nThe left section randomly presents news for you to comment on.\nThe right section allows you to write comments about the news.",
-    "conservative": "conservative",
     "hello": "Hello!",
-    "progressive": "progressive",
     "self": "Let's take a look at the political bias discriminator.",
-    "getStarted": "Now, shall we analyze your political orientation? Please click me!"
+    "analyzeExplanation": "When you click the Analyze button, the AI ​​will analyze your opinion and tell you\nwhether you are conservative or progressive. If you click the Analyze button,\nthe AI ​​will analyze your opinion and tell you whether you are conservative or liberal.",
+    "getStarted": "Now, shall we analyze your political orientation? Please click me!",
+    "changeLanguage": "Change Language",
+    "start": "Analyze",
+    "conservative": "conservative"
   },
   "newsCard": {
-    "title": "news"
+    "title": "News",
+    "summary": "Summary",
+    "body": "Main Text"
   },
   "inputCard": {
-    "title": "to enter"
+    "title": "Input"
+  },
+  "analyzeCard": {
+    "title": "Analyze"
   }
 }

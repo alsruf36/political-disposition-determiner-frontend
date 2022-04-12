@@ -10,12 +10,16 @@
     "self": "정치 성향 판별기에 대하여 알아볼게요.",
     "cardExplanation": "정치 성향 판별기는 두 섹션을 가지고 있습니다.\n왼쪽 섹션은 여러분이 의견을 쓸 뉴스를 랜덤으로 제시합니다.\n오른쪽 섹션은 뉴스에 대한 의견을 쓸 수 있습니다.",
     "analyzeButton": "분석하기",
-    "conservative": "보수",
-    "progressive": "진보",
-    "getStarted": "자, 이제 당신의 정치 성향을 분석해볼까요? 저를 클릭해주세요!"
+    "analyzeExplanation": "<a class=\"font-semibold p-1.5\">분석하기</a> 버튼을 누르면 인공지능이 당신의 의견을 분석하여\n당신이 <a class=\"font-semibold underline decoration-red-500\">보수</a>인지 아니면 <a class=\"font-semibold underline decoration-blue-500\">진보</a>인지 알려주게 됩니다.",
+    "getStarted": "자, 이제 당신의 정치 성향을 분석해볼까요? 버튼을 클릭해주세요!",
+    "changeLanguage": "언어 변경",
+    "start": "분석하기",
+    "conservative": "보수"
   },
   "newsCard": {
-    "title": "뉴스"
+    "title": "뉴스",
+    "summary": "요약",
+    "body": "본문"
   },
   "inputCard": {
     "title": "입력하기"

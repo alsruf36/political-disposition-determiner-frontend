@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosInstanceAPI = axios.create({
-  baseURL: 'http://mingyeol.com:1303/_/api',
+  baseURL: 'http://localhost:2102/_/api',
   withCredentials: false,
   headers: {
     'Content-Type': 'application/json',

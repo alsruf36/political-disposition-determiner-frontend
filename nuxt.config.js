@@ -49,6 +49,7 @@ export default {
           { code: 'ko', name: 'Korean', iso: 'ko_KR', file: 'ko.json' },
           { code: 'en', name: 'English', iso: 'en_US', file: 'en.json' },
           { code: 'ja', name: 'Japanese', iso: 'ja_JP', file: 'ja.json' },
+          { code: 'cn', name: 'Chinese', iso: 'ch_CN', file: 'cn.json' },
         ],
         defaultLocale: 'ko',
         langDir: 'locales/',
@@ -56,7 +57,7 @@ export default {
         vueI18n: {
           fallbackLocale: 'ko',
         },
-        lazy: true,
+        lazy: false,
         vueI18nLoader: true,
         vuex: false,
       },
@@ -86,6 +87,11 @@ export default {
   },
 
   server: {
+    port: 9000,
     host: '0' // default: localhost
   },
+
+  router: {
+    base: '/tamnon/'
+  }
 }

@@ -6,9 +6,7 @@
         </div>
         <div class="text-xl leading-relaxed whitespace-pre-line font-extralight">
             {{ $t('Intro.cardExplanation') }}
-
-            <a class="font-semibold p-1.5">{{ $t('Intro.analyzeButton') }}</a> 버튼을 누르면 인공지능이 당신의 의견을 분석하여
-            당신이 <a class="font-semibold underline decoration-red-500">{{ $t('Intro.conservative') }}</a>인지 아니면 <a class="font-semibold underline decoration-blue-500">{{ $t('Intro.progressive') }}</a>인지 알려주게 됩니다.
+            <div v-html="$t('Intro.analyzeExplanation')"></div>
 
             <a class="font-medium">{{ $t('Intro.getStarted') }}</a>
         </div>
