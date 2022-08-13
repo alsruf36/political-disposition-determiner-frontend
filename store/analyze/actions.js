@@ -1,13 +1,11 @@
 import axios from 'axios'
 
 const axiosInstanceAPI = axios.create({
-  baseURL: 'http://localhost:2102/_/api',
-  withCredentials: false,
+  baseURL: '/tamnon/api',
   headers: {
     'Content-Type': 'application/json',
   },
 })
-
 
 export default {
   async get_result({ commit, state }) {
@@ -16,7 +14,9 @@ export default {
       axiosInstanceAPI
         .get('/analyze', {
           params: {
-            text: state.sentence
+            sentence: state.sentence,
+            clean: "true",
+            plural: "true"
           }
         })
         .then((resp) => {

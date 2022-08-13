@@ -1,10 +1,8 @@
 import axios from 'axios'
 
 const axiosInstanceAPI = axios.create({
-  baseURL: 'http://localhost:2102/_/api',
-  withCredentials: false,
+  baseURL: '/tamnon/api',
 })
-
 
 export default {
   async get_content({ commit }) {

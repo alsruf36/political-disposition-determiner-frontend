@@ -10,26 +10,16 @@ export default {
 
     set_content (state, article) {
       console.log('[debug] state ', state)
+      state.news_title = article.title
+      state.news_subtitle = article.subtitle
 
-      if (article.status === 'fail') {
-        state.status = 'fail'
-        state.status_msg = article.reason
-      }
-      else if (article.status === 'success'){
-        state.news_title = article.result.title
-        state.news_subtitle = article.result.subtitle
+      article.summary.forEach( (value, index, array) => {
+        array[index] = (index + 1).toString() + ". " + array[index]
+      })
 
-        article.result.summary.forEach( (value, index, array) => {
-          array[index] = (index + 1).toString() + ". " + array[index]
-        })
-
-        state.news_summary = article.result.summary.join('\n')
-        state.news_content = article.result.content.join('\n')
-        state.status = 'success'
-        state.status_msg = 'success'
-      }
-      else {
-        console.log('exception in news/mutations/set_content with not known status')
-      }
+      state.news_summary = article.summary.join('\n')
+      state.news_content = article.content.join('\n')
+      state.status = 'success'
+      state.status_msg = 'success'
     }
   }  
