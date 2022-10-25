@@ -13,6 +13,7 @@ export default {
     set_result (state, res) {
       console.log('[debug] state ', state)
       state.analyzed = res
+      console.log(res)
       state.status = 'success'
       state.status_msg = 'success'
     },

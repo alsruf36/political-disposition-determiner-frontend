@@ -9,7 +9,7 @@ export default {
     commit('set_status_start')
     return await new Promise((resolve, reject) => {
       axiosInstanceAPI
-        .get('/article')
+        .get('/news')
         .then((resp) => {
           window.console.log('[debug] article resp', resp)
           const obj = resp.data
