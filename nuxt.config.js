@@ -96,6 +96,12 @@ export default {
         autoprefixer: {},
       },
     },
+    devMiddleware: {
+      headers: {
+        'Cache-Control': 'no-store',
+        Vary: '*'
+      }
+    },
   },
 
   server: {
